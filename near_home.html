@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>定位</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+
+    <style>
+        .goods-img {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .sw-next-prev {
+            display: none;
+        }
+        .swipslider {
+            padding: 0!important;
+        }
+        .swipslider .sw-bullet {
+            bottom:calc(12rem / 75);
+            font-size: calc(12rem / 75);
+            line-height: calc(12rem / 75);
+        }
+        .swipslider .sw-bullet li {
+            width: calc(10rem / 75);
+            height: calc(10rem / 75);
+            background-color: #f5f5f5;
+            border-radius: calc(5rem / 75);
+        }
+        .swipslider .sw-bullet li:not(:last-child) {
+            margin-right: calc(14rem / 75);
+        }
+        .swipslider .sw-bullet li.active {
+            background-color: #ffffff;
+            width: calc(22rem / 75);
+        }
+/*        .content-block.active {
+            color: #0086ff;
+        }
+        .content-block.active .line {
+            display: block;
+        }
+        .help-btns.active {
+            display: block;
+        }
+*/
+        .type li.active {
+            color:#ffffff;
+            background-color: #0a9ffd;
+
+        }
+
+        .gray { 
+            color:#c3c3c3 !important;
+            pointer-events: none;
+         }
+        .goods-show-block-btn.active {
+            color: #0086ff;
+            font-weight: 700;
+            font-size: calc(34rem / 75);
+        }
+        .goods-show-block-btn.active .line{
+            display: block;
+         }
+        .good-block-inner-wrap {
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-property: margin-left;
+            -o-transition-property: margin-left;
+            transition-property: margin-left;
+            -webkit-transition-duration: 200ms;
+            -o-transition-duration: 200ms;
+            transition-duration: 200ms;
+        }
+
+        .triangle {
+            width: calc(18rem / 75);
+            height: calc(28rem / 75);
+            border-top: calc(14rem / 75) solid #333;
+            border-left: calc(9rem / 75) solid transparent;
+            border-right: calc(9rem / 75) solid transparent;
+            border-bottom: calc(14rem / 75) solid transparent;
+
+        }
+        .pay-tools.active {
+            display: block;
+        }
+
+        .f5-grad {
+          background: -webkit-linear-gradient(#f5f5f5, #fff); /* Safari 5.1 - 6.0 */
+          background: -o-linear-gradient(#f5f5f5, #fff); /* Opera 11.1 - 12.0 */
+          background: -moz-linear-gradient(#f5f5f5, #fff); /* Firefox 3.6 - 15 */
+          background: linear-gradient(#f5f5f5, #fff); /* 标准的语法 */
+        }
+
+    </style>
+</head>
+<body class="fl bgcf5f5f5">
+    <!-- header -->
+    <header class="common-header bs-0-0-6-0-dddddd pf t-40 zi10 bgcffffff pt40 pl40" style="background: none; background-color: #fff">
+        <a class="ac333333" href="positioning.html">
+            <div class="fz30 lh30 pt34 fl">
+                <span class="location-city fl fw700 mult-line-ellipsis-1" style="max-width: calc(90rem / 75);">杭州</span>
+                <div class="triangle fl mt8 ml10"></div>
+            </div>
+        </a>
+        <a class="ac333333" href="near_home_search_goods.html">
+            <div class="w476 h60 bgcf5f5f5 br30 pa t60 l164 fz26 lh26 pt18 tac" style="color: #b8b8b8;">
+                <img class="h28 mt-6 mr6" src="img/search.png">
+                <span class="">试试搜：新白鹿</span>
+            </div>
+        </a>
+        <div class="show-pay-tools-btn fr pl40 pr40 h100 lh30 fz30 pt30">
+            <img class="w30" src="img/near_home_top_icon.png">
+        </div>
+
+        <div class="pay-tools w300 h222 bs-0-0-6-0-dddddd bgcffffff fz30 lh30 pa r0 t140 ofh dn">
+            <div class="pt40 pb40 pl34">
+                <img class="h38 mr34 fl mt-4" src="img/near_home_store_tools_icon_1.png">
+                <span>扫一扫</span>
+            </div>
+            <div class="h1px bgce5e5e5 ml106"></div>
+            <a class="ac333333" href="payment_code.html">
+                <div class="pt40 pb40 pl34">
+                    <img class="h38 mr34 fl mt-4" src="img/near_home_store_tools_icon_2.png">
+                    <span>付款码</span>
+                </div>
+            </a>
+        </div>
+    </header>
+</body>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/util.js"></script>
+<script src="js/near_home.js"></script>
+</html>

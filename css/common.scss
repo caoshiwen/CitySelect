@@ -1,0 +1,731 @@
+$common_blue_for_button: #0086ff;
+
+// .header-bottom-shadow{-webkit-box-shadow: 0 0 6px 0 #dddddd;-moz-box-shadow: 0 0 6px 0 #dddddd;box-shadow: 0 0 6px 0 #dddddd;}
+.cred {color: #fa491d;}
+.bgcred {color: #fa491d;}
+.body-no-scroll{width:100%;height:100%;overflow: hidden;}
+
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: none;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: (14rem / 75);
+    /*在选择框的最右侧中间显示小箭头图片*/
+
+    background: url("../img/biggerfcfcfc.png") no-repeat scroll right center transparent;
+    -moz-background-size: (12rem / 75);
+         background-size: (12rem / 75);
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
+    /*很关键：将默认的select选择框样式清除*/
+            appearance: none;
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+    display: none;
+}
+
+
+.clearfix {
+    zoom: 1;
+    &:after {
+        display: block;
+        visibility: hidden;
+        clear: both;
+
+        height: 0;
+
+        content: "";
+    }
+}
+
+
+body {
+    margin-top: -(40rem / 75);
+    min-width: 10rem;
+}
+
+@mixin transition ($time,$detime, $f, $p...) {
+    -webkit-transition-delay: $detime;
+       -moz-transition-delay: $detime;
+            transition-delay: $detime;
+    -webkit-transition-timing-function: $f;
+       -moz-transition-timing-function: $f;
+            transition-timing-function: $f;
+    -webkit-transition-duration: $time;
+       -moz-transition-duration: $time;
+            transition-duration: $time;
+    -webkit-transition-property: $p;
+       -moz-transition-property: $p;
+            transition-property: $p;
+}
+.transition-all {
+    @include transition(600ms, 0, linear, all);
+}
+.transition-transform-op {
+    @include transition(600ms, 0, linear, transform, opacity);
+}
+
+@mixin lineHeightCenter($height) {
+    height: $height;
+
+    line-height: $height;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ipt-no-outline {
+    outline: none;
+}
+.ipt-padding-zero {
+    padding: 0;
+}
+
+
+
+.center-by-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+}
+.center-by-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto;
+}
+.blue-bg-button {
+    display: block;
+
+    padding-top: (4rem / 75);
+    width: (690rem / 75);
+
+    font-size: (32rem / 75);
+    text-align: center;
+
+    color: white;
+    background-image: url("../img/blue_for_button_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    -moz-background-size: (690rem / 75);
+         background-size: (690rem / 75);
+
+    @include lineHeightCenter(100rem / 75);
+    &:link {
+        color: white;
+    }
+    &:hover {
+        color: white;
+    }
+    &:active {
+        color: white;
+    }
+    &:visited {
+        color: white;
+    }
+}
+.blue-bg-button-no-radius {
+    display: block;
+    /* padding-top: (4rem / 75);*/
+
+    width: (750rem / 75);
+
+    font-size: (32rem / 75);
+    text-align: center;
+
+    color: white;
+    background-image: url("../img/blue_for_button_bg_no_radius.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    -moz-background-size: (750rem / 75);
+         background-size: (750rem / 75);
+
+    @include lineHeightCenter(100rem / 75);
+    &:link {
+        color: white;
+    }
+    &:hover {
+        color: white;
+    }
+    &:active {
+        color: white;
+    }
+    &:visited {
+        color: white;
+    }
+}
+.btn-bgffffff-c0086ff {
+    text-align: center;
+
+    color: #0086ff;
+    background-color: #fff;
+}
+.flipx {
+    -webkit-transform: scaleX(-1);
+       -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+    /*IE*/
+
+    -webkit-filter: FlipH;
+            filter: FlipH;
+}
+
+/*垂直翻转*/
+.flipy {
+    -webkit-transform: scaleY(-1);
+       -moz-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+    /*IE*/
+
+    -webkit-filter: FlipV;
+            filter: FlipV;
+}
+
+/*灰色*/
+/* .gray { */
+/*     -webkit-filter: grayscale(100%);*/
+/*     -moz-filter: grayscale(100%);*/
+/*     -ms-filter: grayscale(100%);*/
+/*     -o-filter: grayscale(100%);*/
+
+/*     filter: grayscale(100%);*/
+
+/*     filter: gray;*/
+/* }*/
+
+
+/* <div class="common_loading">*/
+/*     <ul>*/
+/*         <li class="one"></li>*/
+/*         <li class="two"></li>*/
+/*         <li class="three"></li>*/
+/*         <li class="four"></li>*/
+/*         <li class="five"></li>*/
+/*         <li class="six"></li>*/
+/*         <li class="seven"></li>*/
+/*         <li class="eight"></li>*/
+/*         <li class="nine"></li>*/
+/*         <li class="ten"></li>*/
+/*     </ul>*/
+/* </div>*/
+@mixin top($change_top, $time) {
+    top: $change_top / 75 * $time;
+}
+@mixin left($change_left, $time) {
+    left: $change_left / 75 * $time;
+}
+@mixin width($w, $time) {
+    width: $w / 75 * $time;
+}
+@mixin height($h, $time) {
+    height: $h / 75 * $time;
+}
+@mixin commonLoading($time) {
+    /* @keyframes loading {*/
+    /*     0% {*/
+    /*         transform: rotate(0deg);*/
+    /*     }*/
+    /*     100% {*/
+    /*         transform: rotate(-360deg);*/
+    /*     }*/
+    /* }*/
+    width: (80rem / 75);
+    height: (80rem / 75);
+    @-webkit-keyframes loading {
+        0% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+        }
+        100% {
+            -webkit-transform: scale(.1);
+                    transform: scale(.1);
+        }
+    }
+    @-moz-keyframes loading {
+        0% {
+            -moz-transform: scale(1);
+                 transform: scale(1);
+        }
+        100% {
+            -moz-transform: scale(.1);
+                 transform: scale(.1);
+        }
+    }
+    @keyframes loading {
+        0% {
+            -webkit-transform: scale(1);
+               -moz-transform: scale(1);
+                    transform: scale(1);
+        }
+        100% {
+            -webkit-transform: scale(.1);
+               -moz-transform: scale(.1);
+                    transform: scale(.1);
+        }
+    }
+    /* img {*/
+    /*     width: (132rem / 75);*/
+
+    /*     -webkit-transform-origin: center center;*/
+    /*             transform-origin: center center;*/
+    /*     animation: loading 1s linear infinite;*/
+
+    /*     height: (141rem / 75);*/
+    /* }*/
+    li {
+        position: absolute;
+
+        -moz-border-radius: 50%;
+             border-radius: 50%;
+
+        background-color: $common_blue_for_button;
+
+        -webkit-transform: scale(.1);
+           -moz-transform: scale(.1);
+            -ms-transform: scale(.1);
+                transform: scale(.1);
+        -webkit-transform-origin: center center;
+           -moz-transform-origin: center center;
+            -ms-transform-origin: center center;
+                transform-origin: center center;
+        -webkit-animation: loading 1.04s linear infinite;
+           -moz-animation: loading 1.04s linear infinite;
+                animation: loading 1.04s linear infinite;
+    }
+
+    .one {
+        -webkit-animation-delay: .13s;
+
+        @include top(0, $time);
+        @include left(29rem, $time);
+        @include width(20rem, $time);
+        @include height(20rem, $time);
+    }
+    .two {
+        -webkit-animation-delay: .26s;
+
+        @include top(9rem, $time);
+        @include left(50rem, $time);
+        @include width(20rem, $time);
+        @include height(20rem, $time);
+    }
+    .three {
+        -webkit-animation-delay: .39s;
+
+        @include top(29rem, $time);
+        @include left(59rem, $time);
+        @include width(20rem, $time);
+        @include height(20rem, $time);
+    }
+    .four {
+        -webkit-animation-delay: .52s;
+
+        @include top(50rem, $time);
+        @include left(50rem, $time);
+        @include width(20rem, $time);
+        @include height(20rem, $time);
+    }
+    .five {
+        -webkit-animation-delay: .65s;
+
+        @include top(59rem, $time);
+        @include left(29rem, $time);
+        @include width(20rem, $time);
+        @include height(20rem, $time);
+    }
+    .six {
+        -webkit-animation-delay: .78s;
+
+        @include top(50rem, $time);
+        @include left(9rem, $time);
+        @include width(20rem, $time);
+        @include height(20rem, $time);
+    }
+    .seven {
+        -webkit-animation-delay: .91s;
+
+        @include top(29rem, $time);
+        @include left(0, $time);
+        @include width(20rem, $time);
+        @include height(20rem, $time);
+    }
+    .eight {
+        -webkit-animation-delay: 1.04s;
+
+        @include top(9rem, $time);
+        @include left(9rem, $time);
+        @include width(20rem, $time);
+        @include height(20rem, $time);
+    }
+    /* .nine{*/
+    /*     @include top(46rem - 7);*/
+    /*     @include left(-28rem);*/
+    /*     width: (14rem / 75);*/
+    /*     height: (14rem / 75);*/
+    /*     -webkit-animation-delay:1.17s;*/
+    /* }*/
+    /* .ten{*/
+    /*     @include top(46rem + 10 - 18 - 10);*/
+    /*     @include left(-13rem);*/
+    /*     width: (9rem / 75);*/
+    /*     height: (9rem / 75);*/
+    /*     -webkit-animation-delay:1.30s;*/
+    /* }*/
+}
+
+.header-img-common-loading {
+    @include commonLoading(1);
+}
+
+
+
+.common-header {
+    position: relative;
+
+    width: 10rem;
+    height: (140rem / 75);
+
+    background-image: url("../img/blue_header_for_common.png");
+    background-repeat: no-repeat;
+    -moz-background-size: 10rem (140rem / 75);
+         background-size: 10rem (140rem / 75);
+    /* background-position: top left;*/
+
+    .back {
+        display: block;
+        float: left;
+
+        position: absolute;
+        bottom: (34rem / 75);
+        left: (50rem / 75);
+        z-index: 10;
+        /* width: (20rem / 75);*/
+        /* height: (20rem / 75);*/
+        img {
+            float: left;
+
+            height: (32rem / 75);
+        }
+    }
+
+    .add-card {
+        display: block;
+        float: left;
+        float: left;
+
+        position: absolute;
+        right: (50rem / 75);
+        bottom: (31rem / 75);
+
+        width: (36rem / 75);
+        height: (36rem / 75);
+        img {
+            float: left;
+
+            width: (36rem / 75);
+        }
+    }
+
+    .title {
+        position: absolute;
+        bottom: (34rem / 75);
+
+        width: 10rem;
+
+        font-size: (34rem / 75);
+        line-height: (34rem / 75);
+        text-align: center;
+
+        color: #fff;
+    }
+}
+
+
+
+
+
+.common-my-card-list {
+    position: relative;
+
+    margin-top: (30rem / 75);
+    padding-left: (30rem / 75);
+    .art-card {
+        position: relative;
+
+        margin-bottom: (30rem / 75);
+        -moz-border-radius: (10rem / 75);
+             border-radius: (10rem / 75);
+        width: (690rem / 75);
+        height: (220rem / 75);
+
+        background-color: #4193ff;
+    }
+
+    .bank-logo {
+        position: absolute;
+        top: (40rem / 75);
+        left: (40rem / 75);
+
+        -moz-border-radius: 50%;
+             border-radius: 50%;
+        width: (70rem / 75);
+        height: (70rem / 75);
+
+        background-color: #fff;
+
+        opacity: .8;
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            margin: auto;
+            width: (50rem / 75);
+            /* height: (50rem / 75);*/
+        }
+    }
+
+    .card-info {
+        position: absolute;
+        top: (44rem / 75);
+        left: (132rem / 75);
+    }
+
+    .bank-name {
+        margin-bottom: (20rem / 75);
+
+        font-size: (24rem / 75);
+        line-height: (24rem / 75);
+
+        color: #fff;
+    }
+
+    .card-type {
+        margin-bottom: (30rem / 75);
+
+        font-size: (22rem / 75);
+        line-height: (22rem / 75);
+
+        color: #fff;
+
+        opacity: .8;
+    }
+    .card-id {
+        font-size: (44rem / 75);
+        line-height: (44rem / 75);
+        letter-spacing: (3rem / 75);
+
+        color: #fff;
+        span {
+            font-size: (38rem / 75);
+            font-weight: 700;
+        }
+        .star {
+            font-family: "黑体";
+        }
+    }
+
+    .problem {
+        display: block;
+        display: none;
+
+        position: absolute;
+        top: (20rem / 75);
+        right: (20rem / 75);
+
+        width: (44rem / 75);
+        height: (44rem / 75);
+        &.active {
+            display: block;
+        }
+    }
+}
+
+
+
+.sec-choose-card {
+    display: none;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 10rem;
+    height: 100%;
+
+    color: #333;
+    .art-bg {
+        width: 100%;
+        height: 100%;
+
+        background-color: #000;
+
+        opacity: .4;
+    }
+    .art-card-list {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 10rem;
+        height: 60%;
+
+        background-color: #fff;
+        h2 {
+            border-bottom: 1px solid #ccc;
+            height: (100rem / 75);
+
+            font-size: (32rem / 75);
+            font-weight: 700;
+            line-height: (100rem / 75);
+            text-align: center;
+        }
+        ul {
+            overflow: scroll;
+
+            padding-left: (30rem / 75);
+            height: -moz-calc(100% - (100rem / 75) - 1px);
+            height:      calc(100% - (100rem / 75) - 1px);
+        }
+        li {
+            position: relative;
+
+            border-bottom: 1px solid #e9e9e9;
+        }
+    }
+    .bank-logo {
+        position: absolute;
+        top: (40rem / 75);
+        left: 0;
+
+        width: (50rem / 75);
+    }
+    .bank-name {
+        margin-left: (70rem /75);
+
+        font-size: (26rem / 75);
+        line-height: (130rem / 75);
+
+        color: #333;
+    }
+    .is-choose {
+        display: none;
+        float: right;
+
+        position: absolute;
+        top: (52rem / 75);
+        right: (30rem / 75);
+
+        width: (34rem / 75);
+    }
+
+    .art-card-list li.active .is-choose {
+        display: block;
+    }
+}
+
+
+
+
+
+
+/*open-btn*/
+.open-btn {
+    position: relative;
+
+    padding-top: (5rem / 75);
+    width: (66rem / 75);
+    height: (40rem / 75);
+    .open-btn-cir {
+        position: absolute;
+        top: 0;
+        left: (-2rem / 75);
+        z-index: 2;
+
+        -moz-border-radius: 50%;
+             border-radius: 50%;
+        width: (40rem / 75);
+        height: (40rem / 75);
+
+        background-color: #fff;
+
+        -webkit-box-shadow: 0 0 6px 0 #bcbcbc;
+           -moz-box-shadow: 0 0 6px 0 #bcbcbc;
+                box-shadow: 0 0 6px 0 #bcbcbc;
+
+        @include transition(600ms, 0, ease, left, background-color);
+    }
+    .open-btn-bg {
+        -moz-border-radius: (15rem / 75);
+             border-radius: (15rem / 75);
+        width: (66rem / 75);
+        height: (30rem / 75);
+
+        background-color: #bbb;
+
+        opacity: 1;
+
+        @include transition(600ms, 0, ease, background-color, opacity);
+    }
+    &.active {
+        .open-btn-cir {
+            left: (28rem / 75);
+
+            background-color: #0086ff;
+        }
+        .open-btn-bg {
+            background-color: #0086ff;
+
+            opacity: .3;
+        }
+    }
+}
+
+
+
+
+
+
+// jq date
+#date-wrapper h3 {
+    background-color: #0086ff!important;
+}
+#d-tit {
+    font-size: (32rem / 75);
+}
+#d-bg {
+    font-size: (48rem / 75);
+}
+#d-confirm{
+    background-color: #0086ff!important;
+}

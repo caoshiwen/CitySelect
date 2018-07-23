@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head lang="zh-ch">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>定位</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mincss.css">
+
+    <style>
+        .f5-grad {
+          background: -webkit-linear-gradient(#f5f5f5, #fff); /* Safari 5.1 - 6.0 */
+          background: -o-linear-gradient(#f5f5f5, #fff); /* Opera 11.1 - 12.0 */
+          background: -moz-linear-gradient(#f5f5f5, #fff); /* Firefox 3.6 - 15 */
+          background: linear-gradient(#f5f5f5, #fff); /* 标准的语法 */
+        }
+
+
+
+    </style>
+</head>
+<body class="fl pt140">
+    <!-- header -->
+    <header class="common-header bb1scccccc pf t-40 zi10 bgcffffff pt40 pl40" style="background: none; background-color: #fff">
+        <a class="back" href="javascript:goBack();"><img src="img/smaller000000.png"></a>
+        <div class="clear-ipt-parent w580 h60 bgcf5f5f5 br30 pa t60 l120 fz26 lh26 tac vat pl30" style="color: #b8b8b8;">
+            <img class="h28 mr6 fl mt14" src="img/search.png">
+            <input class="search-ipt p0 bn ipt-no-outline ml10 w420 mt12 fl" style="background: none;" type="text" placeholder="请输入城市名称或拼音" maxlength="30" autofocus="autofocus">
+            <img class="clear-ipt w30 h30 fr mr30 mt14" src="img/address_edit_clear.png">
+        </div>
+    </header>
+    <div class="search-hide">
+        <section class="pl30">
+            <article class="positioning-btn pt40 pb40 fz24 lh24">
+                <img class="w24 vat mt6" src="img/positioning_icon.png">
+                <span class="location-city fz40 lh40 fw700 ml10">杭州市</span>
+                <span class="fz24 lh24 c666666 ml20">手机定位</span>
+            </article>
+            <article class="h1px bgce5e5e5"></article>
+            <article>
+                <p class="fz24 lh24 c666666 mt30">热门城市</p>
+                <div class="clearfix">
+                    <div class="hot-city-btn fl mr30 br10 tac pt26 pb26 w190 fz28 lh28 mt30" style="border:1px solid #e5e5e5">上海</div>
+                    <div class="hot-city-btn fl mr30 br10 tac pt26 pb26 w190 fz28 lh28 mt30" style="border:1px solid #e5e5e5">乌鲁木齐</div>
+                    <div class="hot-city-btn fl mr30 br10 tac pt26 pb26 w190 fz28 lh28 mt30" style="border:1px solid #e5e5e5">杭州</div>
+                    <div class="hot-city-btn fl mr30 br10 tac pt26 pb26 w190 fz28 lh28 mt30" style="border:1px solid #e5e5e5">北京</div>
+                    <div class="hot-city-btn fl mr30 br10 tac pt26 pb26 w190 fz28 lh28 mt30" style="border:1px solid #e5e5e5">广州</div>
+                </div>
+            </article>
+            <article>
+                <p class="fz24 lh24 c666666 mt30">全部</p>
+                <ul class="all-city fz30 lh30">
+                    <li id="A" class="pt30 pr60">
+                        <h2 class="fz30 lh30 c666666">A</h2>
+                        <div class="city-list">
+                            <a class="city-item ac333333" href="javascript:void(0);">
+                                <p class="pt30 pb30">阿巴噶旗</p>
+                            </a>
+                            <div class="h1px bgce5e5e5"></div>
+                        </div>
+                    </li>
+                    <li id="B" class="pt30 pr60">
+                        <h2 class="fz30 lh30 c666666">B</h2>
+                        <div class="city-list">
+                            <p class="pt30 pb30">巴中</p>
+                            <div class="h1px bgce5e5e5"></div>
+                        </div>
+                    </li>
+                    <li id="C" class="pt30 pr60"></li>
+                    <li id="D" class="pt30 pr60"></li>
+                    <li id="E" class="pt30 pr60"></li>
+                    <li id="F" class="pt30 pr60"></li>
+                    <li id="G" class="pt30 pr60"></li>
+                    <li id="H" class="pt30 pr60"></li>
+                    <li id="I" class="pt30 pr60"></li>
+                    <li id="J" class="pt30 pr60"></li>
+                    <li id="K" class="pt30 pr60"></li>
+                    <li id="L" class="pt30 pr60"></li>
+                    <li id="M" class="pt30 pr60"></li>
+                    <li id="N" class="pt30 pr60"></li>
+                    <li id="O" class="pt30 pr60"></li>
+                    <li id="P" class="pt30 pr60"></li>
+                    <li id="Q" class="pt30 pr60"></li>
+                    <li id="R" class="pt30 pr60"></li>
+                    <li id="S" class="pt30 pr60"></li>
+                    <li id="T" class="pt30 pr60"></li>
+                    <li id="U" class="pt30 pr60"></li>
+                    <li id="V" class="pt30 pr60"></li>
+                    <li id="W" class="pt30 pr60"></li>
+                    <li id="X" class="pt30 pr60"></li>
+                    <li id="Y" class="pt30 pr60"></li>
+                    <li id="Z" class="pt30 pr60"></li>
+                </ul>
+            </article>
+        </section>
+        <section class="city-letter w50 lh40 fz24 c0086ff pf r0 t240 tac">
+            <style>
+                .city-letter a{display: block;}
+            </style>
+            <p>城市字母</p>
+            <a href="#A">A</a>
+            <a href="#B">B</a>
+            <a href="#C">C</a>
+            <a href="#D">D</a>
+            <a href="#E">E</a>
+            <a href="#F">F</a>
+            <a href="#G">G</a>
+            <a href="#H">H</a>
+            <a href="#I">I</a>
+            <a href="#J">J</a>
+            <a href="#K">K</a>
+            <a href="#L">L</a>
+            <a href="#M">M</a>
+            <a href="#N">N</a>
+            <a href="#O">O</a>
+            <a href="#P">P</a>
+            <a href="#Q">Q</a>
+            <a href="#R">R</a>
+            <a href="#S">S</a>
+            <a href="#T">T</a>
+            <a href="#U">U</a>
+            <a href="#V">V</a>
+            <a href="#W">W</a>
+            <a href="#X">X</a>
+            <a href="#Y">Y</a>
+            <a href="#Z">Z</a>
+        </section>
+    </div>
+    <div class="search-show pl30">
+        <p class="fz24 lh24 c666666 mt30">搜索结果</p>
+        <div class="search-result clearfix">
+            <div class="hot-city-btn fl mr30 br10 tac pt26 pb26 w190 fz28 lh28 mt30" style="border:1px solid #e5e5e5">上海</div>
+        </div>
+    </div>
+    <div id="map" class=""></div>
+<link rel="stylesheet" href="css/fonts.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/change_font_size.js"></script>
+<script src="js/csw_select_city.js"></script>
+<script src="js/util.js"></script>
+<script src="js/positioning.js"></script>
+</body>
+</html>
