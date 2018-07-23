@@ -1,10 +1,11 @@
 # CitySelect
 v1.0.0
 ### 一个简易的 城市筛选 小工具
+[csw_select_city.js](http://github.com/caoshiwen/CitySelect/raw/master/js/csw_select_city.js)
 ```javascript
     let selectCity = new CitySelect();
     //也可以传入json
-    /** {
+    /** cities:{
         "Beijing": "北京",
         "Tianjin": "天津",
         "Shanghai": "上海"
